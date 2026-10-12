@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #F5a623;
+    color: white;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    height: 75px;
+    background: transparent;
+    background-image: linear-gradient(#0007, #0007),
+        url(https://preview.colorlib.com/theme/construction/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-transform: uppercase;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 10px;
+
+}
+
+nav {
+    height: 75px;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ul-nav {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    gap: 22px;
+}
+
+.drop {
+    position: relative;
+}
+
+.dropdown {
+    color: black;
+    display: none;
+    background-color: white;
+    padding: 15px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+}
+
+.dropdown:hover li {
+    color: #F5a623;
+}
+
+.drop:hover .dropdown {
+    display: block;
+}
+
+.hero {
+    height: 100vh;
+
+}
+
+.background {
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+
+.discover {
+    padding: 8px 35px;
+    background-color: #F5a623;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.8s;
+    border: 1px solid #F5a623;
+}
+
+.discover:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.build {
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.lll {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.feature {
+    padding: 20px;
+}
+
+.features p {
+    color: gray;
+    font-size: 15px;
+}
+
+.features h4 {
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.some {
+    padding: 70px;
+}
+
+.some h1 {
+    font-size: 42px;
+}
+
+.some h1,
+.extream {
+    text-align: center;
+}
+
+.extream {
+    font-size: 15px;
+    color: grey;
+}
+
+.card {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards {
+    padding: 20px 20px 40px 20px;
+    width: 30%;
+    transition: all 0.8s ease-in-out;
+}
+
+.cards h4 {
+    font-size: bold;
+}
+
+.cards p {
+    color: gray;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards:hover {
+    background-color: #F5a623;
+}
+
+.sec-cards h1 {
+    font-size: 42px;
+}
+
+.sec-cards h1,
+.extream {
+    text-align: center;
+}
