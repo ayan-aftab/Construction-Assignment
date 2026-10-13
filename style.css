@@ -13,10 +13,14 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     height: 75px;
     background: transparent;
-    background-image: linear-gradient(#0007, #0007),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.690), rgba(0, 0, 0, 0.690)),
         url(https://preview.colorlib.com/theme/construction/img/header-bg.jpg);
     background-repeat: no-repeat;
     height: 100vh;
@@ -34,6 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     max-width: 1200px;
 }
 
@@ -59,14 +64,23 @@ a {
     color: black;
     display: none;
     background-color: white;
-    padding: 15px;
+    padding: 15px 10px;
     list-style: none;
     position: absolute;
     left: 0;
-    bottom: -80px;
+    top: 100%;
+
+    z-index: 10;
 }
 
-.dropdown:hover li {
+.dropdown a {
+    color: black;
+    display: block;
+    padding: 8px 10px;
+
+}
+
+.dropdown a:hover {
     color: #F5a623;
 }
 
@@ -87,10 +101,11 @@ a {
 
 
 .discover {
-    padding: 8px 35px;
+    padding: 10px 40px;
     background-color: #F5a623;
     color: white;
-    border-radius: 20px;
+    font-size: 15px;
+    border-radius: 25px;
     border: none;
     transition: all 0.8s;
     border: 1px solid #F5a623;
@@ -183,6 +198,10 @@ a {
     background-color: #F5a623;
 }
 
+.cards:hover p {
+    color: black;
+}
+
 .sec-cards h1 {
     font-size: 42px;
 }
@@ -190,4 +209,294 @@ a {
 .sec-cards h1,
 .extream {
     text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont {
+    position: relative;
+    width: 22%;
+    overflow: hidden;
+}
+
+.f-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.cont img {
+    overflow: hidden;
+    width: 105%;
+    height: 570px;
+    z-index: -5;
+}
+
+
+.textbox {
+    transition: all 1s ease;
+    transform: translateY(-100%);
+    padding: 78% 20px 20px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5a523b7;
+}
+
+.cont:hover .textbox {
+    transform: translateY(0);
+}
+
+
+.fifthh {
+    margin-top: 120px;
+}
+
+.fifth {
+    padding: 110px 100px;
+    background-color: #F5a623;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fifth h1 {
+    font-size: 50px;
+}
+
+.sixth {
+    padding: 120px 60px;
+}
+
+.contaier {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ccc {
+    padding: 40px 20px;
+    transition: all 0.7s ease;
+}
+
+.ccc:hover {
+    background-color: #F5a623;
+    color: black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.ccc:hover p {
+    color: black;
+}
+
+.ccc p {
+    line-height: 1.5;
+    font-weight: 100;
+    color: grey;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#blog {
+    padding: 70px;
+}
+
+.blo {
+    padding: 20px;
+    width: 35%;
+}
+
+.blo img {
+    width: 100%;
+}
+
+.blo h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.blo p {
+    line-height: 1.5;
+    font-weight: 100;
+    color: grey;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.thhh {
+    padding: 60px 7px;
+    margin-top: 41px;
+    width: 33%;
+    display: flex;
+    justify-content: baseline;
+    gap: -15px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.thh1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.extreame {
+    color: grey;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.contact {
+    padding: 50px 30px;
+}
+
+.contac {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input>input {
+    margin-top: 20px;
+    padding: 10px;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 2px 3px 5px rgb(75, 212, 246);
+}
+
+
+textarea {
+    margin-top: 20px;
+    padding: 10px;
+    height: 150px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    width: 100%;
+}
+
+textarea:focus {
+    box-shadow: 2px 3px 5px rgb(75, 212, 246);
+}
+
+.bbut {
+    padding: 13px 35px;
+    background-color: #F5a623;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+
+
+.news {
+    padding: 20px;
+    width: 32%;
+}
+
+.foot {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.foot h2 {
+    color: white;
+}
+
+.foot p {
+    color: grey;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.button input {
+    padding: 10px 75px 10px 15px;
+    border-radius: 25px;
+    height: 45px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button button {
+    background-color: #F5a623;
+    border: none;
+    border-radius: 25px;
+    height: 43px;
+    min-width: 60px;
+    color: white;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.numb {
+    color: #F5a623;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button input {
+    padding: 10px;
+    border-radius: 25px;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    width: 100%;
+}
+
+.foot2 {
+    color: gray;
+}
+
+.foot2 span {
+    color: #F5a623;
+}
+
+.foot2 {
+    text-align: center;
+}
+
+.button:hover button {
+    cursor: pointer;
+}
+
+footer {
+    padding: 70px 50px;
+    background-color: rgb(28, 26, 26);
 }
