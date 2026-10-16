@@ -277,10 +277,9 @@ a {
 }
 
 .contaier {
-    display: flex;
     gap: 50px;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .ccc {
@@ -438,7 +437,8 @@ textarea:focus {
 .button {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    height: 40px;
     position: relative;
 }
 
@@ -499,4 +499,555 @@ textarea:focus {
 footer {
     padding: 70px 50px;
     background-color: rgb(28, 26, 26);
+}
+
+
+
+
+/*Responsive*/
+/*Responsive*/
+/*Responsive*/
+/*Responsive*/
+
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .contaier {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    header .discover {
+        padding: 10px 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .background {
+        margin-bottom: 90px;
+    }
+
+    .discover {
+        font-size: 20px;
+    }
+
+    .build {
+        font-size: 45px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .sec-cards h1 {
+        font-size: 30px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .f-img {
+        width: 100%;
+    }
+
+    .fifthh h1 {
+        font-size: 35px;
+
+    }
+
+    .fifthh p {
+        font-size: 13px;
+    }
+
+    .fifth {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .fifth p {
+        font-size: 12px;
+    }
+
+    .contaier {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
+    .ccc {
+        width: 100%;
+        background-color: #f5f5f7;
+        border-radius: 12px;
+    }
+
+
+    .div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blo {
+        width: 100%;
+        background-color: #f5f5f7;
+        border-radius: 12px;
+    }
+
+    .thhh {
+        width: 100%;
+    }
+
+    .thh1 img {
+        width: 100%;
+    }
+
+    #contact {
+        padding: 10px 40px 10px 40px;
+    }
+
+    .contac {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+    }
+
+    .button input {
+        width: 400%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+    body {
+        width: 100%;
+    }
+
+    .cont {
+        display: flex;
+        align-items: center;
+    }
+
+    .contaier {
+        width: 88%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    header .discover {
+        padding: 10px 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .background {
+        margin-bottom: 90px;
+    }
+
+    .discover {
+        font-size: 18px;
+    }
+
+    .build {
+        font-size: 35px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sec-cards h1 {
+        font-size: 28px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .f-img {
+        width: 50%;
+    }
+
+    .fifthh h1 {
+        font-size: 35px;
+
+    }
+
+    .fifthh p {
+        font-size: 12px;
+    }
+
+    .fifth {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .fifth p {
+        font-size: 12px;
+    }
+
+    .contaier {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .h1 {
+        font-size: 35px;
+    }
+
+    .ccc {
+        width: 100%;
+        background-color: #f5f5f7;
+        border-radius: 12px;
+    }
+
+
+    .div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blo {
+        width: 100%;
+        background-color: #f5f5f7;
+        border-radius: 12px;
+    }
+
+    .thhh {
+        width: 100%;
+    }
+
+    .thh1 img {
+        width: 100%;
+    }
+
+    #contact {
+        padding: 10px 40px 10px 40px;
+    }
+
+    .contac {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-attachment: scroll;
+        padding: 10px;
+    }
+
+    .background {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 0 5px;
+    }
+
+    .build {
+        font-size: 32px;
+    }
+
+    .background h4 {
+        font-size: 14px;
+    }
+
+    .lll {
+        font-size: 11px;
+    }
+
+    .lll br {
+        display: none;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .some {
+        padding: 50px 20px;
+    }
+
+    .some h1,
+    .sec-cards h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 10px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .f-img {
+        width: 100%;
+    }
+
+    .cont img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .textbox {
+        padding: 20px;
+    }
+
+    .textbox h2 {
+        font-size: 20px;
+    }
+
+    .textbox p {
+        font-size: 12px;
+    }
+
+    .fifth {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 10px;
+        padding: 50px 20px;
+    }
+
+    .fifth h1,
+    .fifthh h1 {
+        font-size: 28px;
+    }
+
+    .fifth p,
+    .fifthh p {
+        font-size: 11px;
+    }
+
+    .siv {
+        min-width: 0;
+    }
+
+    .sixth {
+        padding: 60px 20px;
+    }
+
+    .contaier {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ccc {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    #blog {
+        padding: 50px 15px;
+    }
+
+    .div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .blo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .thhh {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 0;
+        gap: 10px;
+    }
+
+    .thh1 {
+        width: 100%;
+        padding: 8px 0;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .thh1 .img {
+        flex: 0 0 100px;
+    }
+
+    .thh1 .img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .texxxt {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .texxxt h4 {
+        font-size: 14px;
+    }
+
+    #contact {
+        padding: 40px 20px;
+    }
+
+    .contac {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .input,
+    .textarea {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .bbut {
+        max-width: 100%;
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    .foot {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news {
+        width: 100%;
+        padding: 10px 0;
+        min-width: 0;
+    }
+
+    .numb {
+        font-size: 20px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .foot2 {
+        font-size: 12px;
+    }
 }
